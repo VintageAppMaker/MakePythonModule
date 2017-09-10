@@ -46,7 +46,7 @@ DLL(.pyd)의 파일명과 동일한 함수가 초기화 함수다. 이곳에서�
 PyMODINIT_FUNC initdlog()
 {
     Py_InitModule3("dlog", DebugMethods, "Debug log module");
-hWait = CreateEvent(NULL, TRUE, FALSE, NULL);
+    hWait = CreateEvent(NULL, TRUE, FALSE, NULL);
 }
 
 ~~~
@@ -60,7 +60,7 @@ Py_InitModule3() 함수는 첫번째 파라메터는 모듈명이다. 그리고 
 static PyMethodDef DebugMethods[] = {
     {"dout",        debug_logout,      METH_VARARGS,"write message"},
     {"openwindow",  debug_openwindow,  METH_VARARGS,"open  window"},
-{"closewindow", debug_closewindow, METH_VARARGS,"close window"},
+    {"closewindow", debug_closewindow, METH_VARARGS,"close window"},
     {NULL, NULL, 0, NULL}        /* Sentinel */
 };
 ~~~
@@ -78,5 +78,15 @@ Windows 프로그램의 특성상 Form은 DoModal()이 실행되는 순간, 같�
 -    Dialog가 화면에 나타났고 Dialog에 관련 메소드를 사용할 수 있다.
 
 ![원본블로그](http://postfiles13.naver.net/20120404_220/adsloader_1333515076579LSfvK_PNG/4.PNG?type=w2)
+
+- closewindow
+다른 문맥에서 Form을 종료해야 하므로 다음과 같이 종료 메시지를 보낸다.
+
+~~~c++
+SendMessage(hWnd, WM_CLOSE,0, 0);
+~~~ 
+
+참고로 종료메시지가 처리되는 순간 Python이 종료되면 윈도우에서 abnormal terminated 에러가 발생하므로 python에서는 closewindow()를 실행 후, 몇 초간 대기해주는 코드를 작성하는 것이 좋다.
+
 
 

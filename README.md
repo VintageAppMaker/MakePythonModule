@@ -99,6 +99,7 @@ https://github.com/VintageAppMaker/MakePythonModule/blob/master/PythonExtends/Py
 import dlog
 import os
  
+# testing twice open
 dlog.openwindow()
 dlog.openwindow()
  
@@ -112,6 +113,7 @@ raw_input("아무키나 누르세요 - 윈도우 종료")
 dlog.closewindow()
 raw_input("아무키나 누르세요 - 윈도우 시작")
  
+# testing twice open
 dlog.openwindow()
 dlog.openwindow()
  

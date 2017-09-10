@@ -88,5 +88,45 @@ SendMessage(hWnd, WM_CLOSE,0, 0);
 
 참고로 종료메시지가 처리되는 순간 Python이 종료되면 윈도우에서 abnormal terminated 에러가 발생하므로 python에서는 closewindow()를 실행 후, 몇 초간 대기해주는 코드를 작성하는 것이 좋다.
 
+### C 소스
+
+https://github.com/VintageAppMaker/MakePythonModule/blob/master/PythonExtends/PythonExtends.cpp
+
+## Python 예제
+
+~~~python
+# -*- coding: cp949 -*-
+import dlog
+import os
+ 
+dlog.openwindow()
+dlog.openwindow()
+ 
+findlist = os.listdir("c:\\windows\\")
+i = 0
+for f in findlist:
+    dlog.dout(f, i)
+    i = i + 1
+ 
+raw_input("아무키나 누르세요 - 윈도우 종료")
+dlog.closewindow()
+raw_input("아무키나 누르세요 - 윈도우 시작")
+ 
+dlog.openwindow()
+dlog.openwindow()
+ 
+findlist = os.listdir("c:\\windows\\")
+i = 0
+for f in findlist:
+    dlog.dout(f, i)
+    i = i + 1
+ 
+
+~~~
+
+1. dlog.pyd를 같은 폴더에 넣는다.
+2. 탐색기나 console 창에서 test.py를 실행시킨다.
+
+![원본블로그](http://postfiles11.naver.net/20120404_122/adsloader_1333515098996efYcx_PNG/5.PNG?type=w2)
 
 

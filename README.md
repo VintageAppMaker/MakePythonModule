@@ -17,7 +17,7 @@ Windows에서 파이썬 프로그램을 개발할 때, 로그 출력을 위한 G
 
 ### 개발환경
 - Visual C++(2008)
-- Python2.7(화면은 설정은 2.5)
+- Python2.7(화면설정은 python 2.5 screenshot)
 
 다음은 프로젝트 설정은 파이썬 2.5가 c:\python25에 설치되었다는 가정이다. 만약 python2.7이 설치되어 있고 c:\python27에 설치되었다면
 ~~~

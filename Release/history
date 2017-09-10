@@ -1,0 +1,350 @@
+[2012-4-18 12:59:07] [android.ktpns.tester] PushApis::stop()
+[2012-4-18 12:59:07] [android.ktpns.tester] Monitor::SetRunState(false)
+[2012-4-18 12:59:07] [android.ktpns.tester] mqttManager::Stop()
+[2012-4-18 12:59:07] [android.ktpns.tester] stopMqttThread()
+[2012-4-18 12:59:07] [android.ktpns.tester] sendRegisterErrorToAll() Q >> 0
+[2012-4-18 12:59:07] [android.ktpns.tester] terminateAllResources()
+[2012-4-18 12:59:07] [android.ktpns.tester] scheduleKeepalivePing(false,0)
+[2012-4-18 12:59:07] [android.ktpns.tester] unregisterMqttReceiver()
+[2012-4-18 12:59:07] [android.ktpns.tester] cancelAllMqttTimer() pingOnly > false
+[2012-4-18 12:59:07] [android.ktpns.tester] cancelPushInfo() mSPLB > null
+[2012-4-18 12:59:07] [android.ktpns.tester] terminateMqttClient() mMqttClient > com.ssomon.mqtt.MqttClient@46508060
+[2012-4-18 12:59:07] [android.ktpns.tester] MqttClient::terminate(true) isAppConnected > true
+[2012-4-18 12:59:07] [android.ktpns.tester] Mqtt::tcpipDisconnect(true)
+[2012-4-18 12:59:07] [android.ktpns.tester] MqttBaseClient::setDetailMessage(DataInputStream.read returned -1)
+[2012-4-18 12:59:07] [android.ktpns.tester] Mqtt::tcpipDisconnect(true)
+[2012-4-18 12:59:07] [android.ktpns.tester] MqttBaseClient::run() return...
+[2012-4-18 12:59:07] [android.ktpns.tester] MqttClient::terminate return...
+[2012-4-18 12:59:07] [android.ktpns.tester] terminateMqttClient() return...
+[2012-4-18 12:59:07] [android.ktpns.tester] ServerLoop: LOCAL Closed
+[2012-4-18 12:59:07] [android.ktpns.tester] PushApis::start(android.ktpns.tester)
+[2012-4-18 12:59:07] [android.ktpns.tester] Util::getProp([ro.product.version]:)
+[2012-4-18 12:59:44] [android.ktpns.tester] mWakeupClientReceiver::onReceive()
+[2012-4-18 12:59:44] [android.ktpns.tester] Util::IsExistPackage(com.ktpns.pa) return false
+[2012-4-18 12:59:52] [android.ktpns.tester] PushApis::register(ssomon)
+[2012-4-18 12:59:52] [android.ktpns.tester] PushApis::SendErrorOnDisconnected(null)
+[2012-4-18 12:59:52] [android.ktpns.tester] getNetworkInfo: Network Type > MOBILE
+[2012-4-18 12:59:52] [android.ktpns.tester] getNetworkInfo() status : CONNECTED, isOlleh : false
+[2012-4-18 12:59:52] [android.ktpns.tester] pushManager::GetStatus() return CONNECT
+[2012-4-18 12:59:52] [android.ktpns.tester] Util::getProp([ro.product.version]:)
+[2012-4-18 12:59:52] [android.ktpns.tester] mqttManager::OnMessage() android.ktpns.tester:MQTT_REGISTER
+[2012-4-18 12:59:52] [android.ktpns.tester] requestRegister(ssomon,android.ktpns.tester)
+[2012-4-18 12:59:52] [android.ktpns.tester] requestRegister: client state > PUSH_CONNECTED
+[2012-4-18 12:59:52] [android.ktpns.tester] mqttregireq payload total len > 28
+[2012-4-18 12:59:52] [android.ktpns.tester] Mqtt::writePacket() Message Type > 0
+[2012-4-18 12:59:52] [android.ktpns.tester] NativeUtil::getFixedKey()
+[2012-4-18 12:59:52] [android.ktpns.tester] NativeUtil::encrypt()
+[2012-4-18 12:59:52] [android.ktpns.tester] packet encryption success. total length >> 70
+[2012-4-18 12:59:52] [android.ktpns.tester] stream_out.write()
+[2012-4-18 12:59:52] [android.ktpns.tester] [MQTT] ***************** PACKET DUMP *****************
+[2012-4-18 12:59:52] [android.ktpns.tester] [MQTT] 42 00 00 00 3C 5E 59 33 E5 14 B7 53 75 D9 11 3E
+[2012-4-18 12:59:52] 5A B9 0E AF 3E 6C EA 39 B7 29 0D 4B 78 ED 75 30
+[2012-4-18 12:59:52] 0E 5B 74 7A BE DD FE F2 66 52 65 4F B9 20 73 E4
+[2012-4-18 12:59:52] 14 4E AF C4 79 AB 46 7C 32 A9 59 5F 52 44 ED C7
+[2012-4-18 12:59:52] 50 6B 8C E2 26 DD
+[2012-4-18 12:59:52] [android.ktpns.tester] [MQTT] ***********************************************
+[2012-4-18 12:59:52] [android.ktpns.tester] stream_out.flush()
+[2012-4-18 12:59:52] [android.ktpns.tester] RegiTimerQueue::addTimer(android.ktpns.tester)
+[2012-4-18 12:59:52] [android.ktpns.tester] RegiTimer::RegiTimer(android.ktpns.tester)
+[2012-4-18 12:59:52] [android.ktpns.tester] RegiTimer::schedule(android.ktpns.tester)
+[2012-4-18 12:59:52] [android.ktpns.tester] schedule register response timer : 30000
+[2012-4-18 12:59:52] [android.ktpns.tester] RegiTimerQueue::addTimer() return true
+[2012-4-18 12:59:54] [android.ktpns.tester] recv encrypt data length : 130
+[2012-4-18 12:59:54] [android.ktpns.tester] recv encrypt id1 : 60, id2 : 94
+[2012-4-18 12:59:54] [android.ktpns.tester] Read data...
+[2012-4-18 12:59:54] [android.ktpns.tester] Read data completed.
+[2012-4-18 12:59:54] [android.ktpns.tester] NativeUtil::getFixedKey()
+[2012-4-18 12:59:54] [android.ktpns.tester] NativeUtil::decrypt()
+[2012-4-18 12:59:54] [android.ktpns.tester] packet decryption success. total length >> 101
+[2012-4-18 12:59:54] [android.ktpns.tester] decodePacket() i=2,word0=15
+[2012-4-18 12:59:54] [android.ktpns.tester] [MQTT] ***************** PACKET DUMP *****************
+[2012-4-18 12:59:54] [android.ktpns.tester] [MQTT] F0 63 00 60 00 51 67 41 41 41 44 78 65 6C 41 72
+[2012-4-18 12:59:54] 5A 58 75 64 76 39 2F 69 2F 57 55 37 39 43 6F 2B
+[2012-4-18 12:59:54] 57 59 42 63 62 6B 4E 55 77 75 63 4E 50 32 4A 4A
+[2012-4-18 12:59:54] 44 74 52 2F 42 79 38 34 64 77 2F 73 6C 76 7A 6A
+[2012-4-18 12:59:54] 68 51 2F 52 59 4E 67 45 7A 37 45 2F 34 47 78 38
+[2012-4-18 12:59:54] 41 39 54 59 68 4D 63 34 2F 45 4F 51 77 70 46 37
+[2012-4-18 12:59:54] 4C 70 41 3D 3D
+[2012-4-18 12:59:54] [android.ktpns.tester] [MQTT] ***********************************************
+[2012-4-18 12:59:54] [android.ktpns.tester] register return code > 0
+[2012-4-18 12:59:54] [android.ktpns.tester] received reg id len > 96
+[2012-4-18 12:59:54] [android.ktpns.tester] registrationReplied(0, [B@463b08b8)
+[2012-4-18 12:59:54] [android.ktpns.tester] registrationReplied: client state > PUSH_CONNECTED
+[2012-4-18 12:59:54] [android.ktpns.tester] decryptRegId([B@463b08b8)
+[2012-4-18 12:59:54] [android.ktpns.tester] base64 decoded array len >> 70
+[2012-4-18 12:59:54] [android.ktpns.tester] NativeUtil::genKey()
+[2012-4-18 12:59:54] [android.ktpns.tester] NativeUtil::decrypt()
+[2012-4-18 12:59:54] [android.ktpns.tester] decryptRegId() return 357841036836084:ssomon:android.ktpns.tester
+[2012-4-18 12:59:54] [android.ktpns.tester] extractPackageName(357841036836084:ssomon:android.ktpns.tester)
+[2012-4-18 12:59:54] [android.ktpns.tester] RegiTimerQueue::removeTimer(android.ktpns.tester)
+[2012-4-18 12:59:54] [android.ktpns.tester] RegiTimer::cancel(android.ktpns.tester)
+[2012-4-18 12:59:54] [android.ktpns.tester] RegiTimerQueue::removeTimer() return true
+[2012-4-18 12:59:54] [android.ktpns.tester] MqttData type > 0
+[2012-4-18 12:59:54] [android.ktpns.tester] mReciver() action > IPC.PUSH.PSW.BROADCAST.REC
+[2012-4-18 12:59:54] [android.ktpns.tester] pushManager::sendToAPK() Bundle[{ID=android.ktpns.tester, result=1, reg_id=QgAAADxelArZXudv9/i/WU79Co+WYBcbkNUwucNP2JJDtR/By84dw/slvzjhQ/RYNgEz7E/4Gx8A9TYhMc4/EOQwpF7LpA==, data_type=0}]
+[2012-4-18 12:59:54] [android.ktpns.tester] readPacket()
+[2012-4-18 12:59:54] [android.ktpns.tester] pushManager::SendFormattedMessage()
+[2012-4-18 12:59:54] [android.ktpns.tester] id > android.ktpns.tester, type > 0
+[2012-4-18 12:59:54] [android.ktpns.tester] sendToAPK: send message to handler >> true
+[2012-4-18 12:59:54] [android.ktpns.tester] mqttManager::OnMessage() android.ktpns.tester:ok
+[2012-4-18 13:00:12] [android.ktpns.tester] PushApis::getConnectionState()
+[2012-4-18 13:00:12] [android.ktpns.tester] getNetworkInfo: Network Type > MOBILE
+[2012-4-18 13:00:12] [android.ktpns.tester] getNetworkInfo() status : CONNECTED, isOlleh : false
+[2012-4-18 13:00:12] [android.ktpns.tester] pushManager::GetStatus() return CONNECT
+[2012-4-18 13:00:12] [android.ktpns.tester] PushApis::getConnectionState() return 0
+[2012-4-18 13:00:34] [android.ktpns.tester] PushApis::getConnectionState()
+[2012-4-18 13:00:34] [android.ktpns.tester] getNetworkInfo: Network Type > MOBILE
+[2012-4-18 13:00:34] [android.ktpns.tester] getNetworkInfo() status : CONNECTED, isOlleh : false
+[2012-4-18 13:00:34] [android.ktpns.tester] pushManager::GetStatus() return CONNECT
+[2012-4-18 13:00:34] [android.ktpns.tester] PushApis::getConnectionState() return 0
+[2012-4-18 13:01:32] [android.ktpns.tester] PushApis::getConnectionState()
+[2012-4-18 13:01:32] [android.ktpns.tester] getNetworkInfo: Network Type > MOBILE
+[2012-4-18 13:01:32] [android.ktpns.tester] getNetworkInfo() status : CONNECTED, isOlleh : false
+[2012-4-18 13:01:33] [android.ktpns.tester] pushManager::GetStatus() return CONNECT
+[2012-4-18 13:01:33] [android.ktpns.tester] PushApis::getConnectionState() return 0
+[2012-4-18 13:01:37] [android.ktpns.tester] PushApis::stop()
+[2012-4-18 13:01:37] [android.ktpns.tester] Monitor::SetRunState(false)
+[2012-4-18 13:01:37] [android.ktpns.tester] mqttManager::Stop()
+[2012-4-18 13:01:37] [android.ktpns.tester] stopMqttThread()
+[2012-4-18 13:01:37] [android.ktpns.tester] sendRegisterErrorToAll() Q >> 0
+[2012-4-18 13:01:37] [android.ktpns.tester] terminateAllResources()
+[2012-4-18 13:01:37] [android.ktpns.tester] scheduleKeepalivePing(false,0)
+[2012-4-18 13:01:37] [android.ktpns.tester] unregisterMqttReceiver()
+[2012-4-18 13:01:37] [android.ktpns.tester] cancelAllMqttTimer() pingOnly > false
+[2012-4-18 13:01:37] [android.ktpns.tester] cancelPushInfo() mSPLB > null
+[2012-4-18 13:01:37] [android.ktpns.tester] terminateMqttClient() mMqttClient > com.ssomon.mqtt.MqttClient@46303f50
+[2012-4-18 13:01:37] [android.ktpns.tester] MqttClient::terminate(true) isAppConnected > true
+[2012-4-18 13:01:37] [android.ktpns.tester] Mqtt::tcpipDisconnect(true)
+[2012-4-18 13:01:37] [android.ktpns.tester] MqttBaseClient::setDetailMessage(DataInputStream.read returned -1)
+[2012-4-18 13:01:37] [android.ktpns.tester] Mqtt::tcpipDisconnect(true)
+[2012-4-18 13:01:37] [android.ktpns.tester] MqttBaseClient::run() return...
+[2012-4-18 13:01:37] [android.ktpns.tester] MqttClient::terminate return...
+[2012-4-18 13:01:37] [android.ktpns.tester] terminateMqttClient() return...
+[2012-4-18 13:01:37] [android.ktpns.tester] ServerLoop: LOCAL Closed
+[2012-4-18 13:01:38] [android.ktpns.tester] PushApis::start(android.ktpns.tester)
+[2012-4-18 13:01:38] [android.ktpns.tester] Util::getProp([ro.product.version]:)
+[2012-4-18 13:01:39] [android.ktpns.tester] ########## DEVICE INFO LOG ##########
+[2012-4-18 13:01:39] [android.ktpns.tester] Model Name       : HTC Desire
+[2012-4-18 13:01:39] [android.ktpns.tester] Manufacturer     : HTC
+[2012-4-18 13:01:39] [android.ktpns.tester] OS Version       : 2.1-update1
+[2012-4-18 13:01:39] [android.ktpns.tester] Phone Number     : 01036307158
+[2012-4-18 13:01:39] [android.ktpns.tester] Device ID        : 357841036836084
+[2012-4-18 13:01:39] [android.ktpns.tester] Network Operator : SKTelecom
+[2012-4-18 13:01:39] [android.ktpns.tester] Terminal Version : 1.19.911.5
+[2012-4-18 13:01:39] [android.ktpns.tester] #####################################
+[2012-4-18 13:01:39] [android.ktpns.tester] PushApis::checkDeviceId(357841036836084)
+[2012-4-18 13:01:39] [android.ktpns.tester] device id length > 15
+[2012-4-18 13:01:39] [android.ktpns.tester] imei check digit : input > 4, output > 4
+[2012-4-18 13:01:39] [android.ktpns.tester] pushManager::Start() package = android.ktpns.tester
+[2012-4-18 13:01:39] [android.ktpns.tester] pushManager::BuildReceiver()
+[2012-4-18 13:01:39] [android.ktpns.tester] Util::IsClientRunning() return false
+[2012-4-18 13:01:39] [android.ktpns.tester] RequestManager::StartServer()
+[2012-4-18 13:01:39] [android.ktpns.tester] Util::IsClientRunning() return false
+[2012-4-18 13:01:39] [android.ktpns.tester] mqttManager::mqttManager() sLastKeepAliveTime = 1200
+[2012-4-18 13:01:39] [android.ktpns.tester] Util::getProp([ro.product.version]:)
+[2012-4-18 13:01:39] [android.ktpns.tester] MsgIdStore::getSingleton() > com.ktpns.lib.mqtt.MsgIdStore@4623d130
+[2012-4-18 13:01:39] [android.ktpns.tester] mqttManager::Start()
+[2012-4-18 13:01:39] [android.ktpns.tester] Start MQQT Thread:
+[2012-4-18 13:01:39] [android.ktpns.tester] Monitor::setPackageName(android.ktpns.tester)
+[2012-4-18 13:01:39] [android.ktpns.tester] Monitor::ExitOnCloseState()
+[2012-4-18 13:01:39] [android.ktpns.tester] registerMqttReceiver()
+[2012-4-18 13:01:39] [android.ktpns.tester] Util::IsClientRunning() return false
+[2012-4-18 13:01:39] [android.ktpns.tester] ServerLoop: Server Running...
+[2012-4-18 13:01:39] [android.ktpns.tester] getNetworkInfo: Network Type > MOBILE
+[2012-4-18 13:01:39] [android.ktpns.tester] mMqttReceiver() action = android.net.conn.CONNECTIVITY_CHANGE
+[2012-4-18 13:01:39] [android.ktpns.tester] getNetworkInfo() status : CONNECTED, isOlleh : false
+[2012-4-18 13:01:39] [android.ktpns.tester] mMqttReceiver: client state > PUSH_DISCONNECTED
+[2012-4-18 13:01:39] [android.ktpns.tester] ConnectedInfo::setNetType(0)
+[2012-4-18 13:01:39] [android.ktpns.tester] ConnectedInfo::setExtraInfo(web.sktelecom.com)
+[2012-4-18 13:01:39] [android.ktpns.tester] Util::getMobileIP() return 10.165.72.149
+[2012-4-18 13:01:39] [android.ktpns.tester] ConnectedInfo::setIP(10.165.72.149)
+[2012-4-18 13:01:39] [android.ktpns.tester] connect to L/B [olb.pns.kt.com:15000]
+[2012-4-18 13:01:39] [android.ktpns.tester] setClientState(LB_CONNECTING)
+[2012-4-18 13:01:39] [android.ktpns.tester] LoadMqttConnectionInfo() isMobileNet=true
+[2012-4-18 13:01:39] [android.ktpns.tester] LoadMqttConnectionInfo() return false
+[2012-4-18 13:01:39] [android.ktpns.tester] requestPushInfo()
+[2012-4-18 13:01:39] [android.ktpns.tester] SPLBRequest::SPLBRequest()
+[2012-4-18 13:01:39] [android.ktpns.tester] _SPSock::_SPSock() : olb.pns.kt.com, 15000
+[2012-4-18 13:01:39] [android.ktpns.tester] _SPSock::newDataStream()
+[2012-4-18 13:01:39] [android.ktpns.tester] _SPStreamOut::_SPStreamOut()
+[2012-4-18 13:01:39] [android.ktpns.tester] _SPStreamIn::_SPStreamIn()
+[2012-4-18 13:01:39] [android.ktpns.tester] SPLBRequest::request()
+[2012-4-18 13:01:39] [android.ktpns.tester] _SPSock::write(com.ktpns.lib.lb.SPLBRequest@4640e4f0)
+[2012-4-18 13:01:39] [android.ktpns.tester] ####### _SPStreamOut::swrite() ######################
+[2012-4-18 13:01:39] [android.ktpns.tester] ############ LB PACKET LOG ############
+[2012-4-18 13:01:39] [android.ktpns.tester] LB: PacketLength   : 22
+[2012-4-18 13:01:39] [android.ktpns.tester] LB: PacketType     : 0
+[2012-4-18 13:01:39] [android.ktpns.tester] LB: AgentType      : 0
+[2012-4-18 13:01:39] [android.ktpns.tester] LB: MajorVer       : 1
+[2012-4-18 13:01:39] [android.ktpns.tester] LB: MinorVer       : 0
+[2012-4-18 13:01:39] [android.ktpns.tester] LB: DeviceIdLength : 15
+[2012-4-18 13:01:39] [android.ktpns.tester] LB: DeviceId       : 357841036836084
+[2012-4-18 13:01:39] [android.ktpns.tester] ########################################
+[2012-4-18 13:01:39] [android.ktpns.tester] NativeUtil::getFixedKey()
+[2012-4-18 13:01:39] [android.ktpns.tester] NativeUtil::encrypt()
+[2012-4-18 13:01:39] [android.ktpns.tester] packet encryption success. total length >> 54
+[2012-4-18 13:01:39] [android.ktpns.tester] send encrypt data length : 50
+[2012-4-18 13:01:39] [android.ktpns.tester] _SPSock::readLB()
+[2012-4-18 13:01:39] [android.ktpns.tester] ####### _SPStreamIn::sread() ######################
+[2012-4-18 13:01:39] [android.ktpns.tester] _SPStreamIn::readBySize() size > 6
+[2012-4-18 13:01:40] [android.ktpns.tester] *** read header.(6)
+[2012-4-18 13:01:40] [android.ktpns.tester] recv encrypt data length : 50
+[2012-4-18 13:01:40] [android.ktpns.tester] Read data...
+[2012-4-18 13:01:40] [android.ktpns.tester] Read data completed.
+[2012-4-18 13:01:40] [android.ktpns.tester] NativeUtil::getFixedKey()
+[2012-4-18 13:01:40] [android.ktpns.tester] NativeUtil::decrypt()
+[2012-4-18 13:01:40] [android.ktpns.tester] packet decryption success. total length >> 16
+[2012-4-18 13:01:40] [android.ktpns.tester] ############ LB PACKET LOG ############
+[2012-4-18 13:01:40] [android.ktpns.tester] LB: PacketLength   : 16
+[2012-4-18 13:01:40] [android.ktpns.tester] LB: PacketType     : 1
+[2012-4-18 13:01:40] [android.ktpns.tester] LB: Result         : 0
+[2012-4-18 13:01:40] [android.ktpns.tester] LB: Server IP      : -738826203
+[2012-4-18 13:01:40] [android.ktpns.tester] LB: Server PORT    : 14955
+[2012-4-18 13:01:40] [android.ktpns.tester] LB: TimeRange      : 3
+[2012-4-18 13:01:40] [android.ktpns.tester] LB: LatestAppVer   : 33
+[2012-4-18 13:01:40] [android.ktpns.tester] LB: LatestLibVer   : 44
+[2012-4-18 13:01:40] [android.ktpns.tester] ########################################
+[2012-4-18 13:01:40] [android.ktpns.tester] SPLBData::SPLBData(com.ktpns.lib.lb.SPLBData@464e5a58)
+[2012-4-18 13:01:40] [android.ktpns.tester] SPLBRequest::Response()
+[2012-4-18 13:01:40] [android.ktpns.tester] SPLBRequest::close()
+[2012-4-18 13:01:40] [android.ktpns.tester] _SPSock::close()
+[2012-4-18 13:01:40] [android.ktpns.tester] _SPSock::closeDataStream()
+[2012-4-18 13:01:40] [android.ktpns.tester] _SPStreamOut::close
+[2012-4-18 13:01:40] [android.ktpns.tester] _SPStreamIn::close
+[2012-4-18 13:01:40] [android.ktpns.tester] requestPushInfo: time range = 3
+[2012-4-18 13:01:40] [android.ktpns.tester] setClientState(PUSH_CONNECTING)
+[2012-4-18 13:01:40] [android.ktpns.tester] mReciver() action > IPC.PUSH.PSW.BROADCAST.CLOSETIME
+[2012-4-18 13:01:40] [android.ktpns.tester] Mqtt Client : null
+[2012-4-18 13:01:40] [android.ktpns.tester] mqttConnSpec >> tcp://211.246.104.37@14955, keepAlive >> 1200
+[2012-4-18 13:01:40] [android.ktpns.tester] MsgIdStore::getLastMessageId()
+[2012-4-18 13:01:40] [android.ktpns.tester] device info : HTC Desire|*|01036307158|*|2.1-update1|*|HTC|*|SKTelecom|*|1.19.911.5, last msg id : 
+[2012-4-18 13:01:40] [android.ktpns.tester] getNetworkInfo: Network Type > MOBILE
+[2012-4-18 13:01:40] [android.ktpns.tester] getNetworkInfo() status : CONNECTED, isOlleh : false
+[2012-4-18 13:01:40] [android.ktpns.tester] Mqtt::setKeepAlive() i=1200
+[2012-4-18 13:01:40] [android.ktpns.tester] mqttconnect payload total len > 93
+[2012-4-18 13:01:40] [android.ktpns.tester] Mqtt::tcpipDisconnect(true)
+[2012-4-18 13:01:41] [android.ktpns.tester] MqttJavaNetSocket::setSoTimeout(1200)
+[2012-4-18 13:01:41] [android.ktpns.tester] receive buffer size > 87380
+[2012-4-18 13:01:41] [android.ktpns.tester] Mqtt::writePacket() Message Type > 1
+[2012-4-18 13:01:41] [android.ktpns.tester] NativeUtil::getFixedKey()
+[2012-4-18 13:01:41] [android.ktpns.tester] NativeUtil::encrypt()
+[2012-4-18 13:01:41] [android.ktpns.tester] packet encryption success. total length >> 134
+[2012-4-18 13:01:41] [android.ktpns.tester] stream_out.write()
+[2012-4-18 13:01:41] [android.ktpns.tester] [MQTT] ***************** PACKET DUMP *****************
+[2012-4-18 13:01:41] [android.ktpns.tester] [MQTT] 82 00 00 00 3C 5E A2 12 71 9C 36 90 D8 40 D6 D2
+[2012-4-18 13:01:41] 84 CB 96 5C 48 6F 5F 88 B0 77 8A FD 83 8C F7 4C
+[2012-4-18 13:01:41] 73 27 18 98 84 A5 07 36 B0 91 64 E8 47 42 80 BA
+[2012-4-18 13:01:41] 36 CB 7F 0E A3 73 AB 84 A0 58 5B CA 12 DA 22 10
+[2012-4-18 13:01:41] BC 97 DC DD C2 50 B9 AC 4A A6 1E D5 98 2C 47 C4
+[2012-4-18 13:01:41] 9C 2A DD 37 F7 7F 3E BF 97 13 3B CD 9C 31 0D 51
+[2012-4-18 13:01:41] 4F 32 74 79 C3 D1 CC 95 70 27 0D 18 20 B6 DE 92
+[2012-4-18 13:01:41] 42 A0 DE 31 8C 51 1A 3C BC 03 CB E0 56 AC 54 61
+[2012-4-18 13:01:41] 0A 03 07 87 B1 01
+[2012-4-18 13:01:41] [android.ktpns.tester] [MQTT] ***********************************************
+[2012-4-18 13:01:41] [android.ktpns.tester] stream_out.flush()
+[2012-4-18 13:01:41] [android.ktpns.tester] readPacket()
+[2012-4-18 13:01:41] [android.ktpns.tester] recv encrypt data length : 34
+[2012-4-18 13:01:41] [android.ktpns.tester] recv encrypt id1 : 60, id2 : 94
+[2012-4-18 13:01:41] [android.ktpns.tester] Read data...
+[2012-4-18 13:01:41] [android.ktpns.tester] Read data completed.
+[2012-4-18 13:01:41] [android.ktpns.tester] NativeUtil::getFixedKey()
+[2012-4-18 13:01:41] [android.ktpns.tester] NativeUtil::decrypt()
+[2012-4-18 13:01:41] [android.ktpns.tester] packet decryption success. total length >> 6
+[2012-4-18 13:01:41] [android.ktpns.tester] decodePacket() i=2,word0=2
+[2012-4-18 13:01:41] [android.ktpns.tester] [MQTT] ***************** PACKET DUMP *****************
+[2012-4-18 13:01:41] [android.ktpns.tester] [MQTT] 20 04 00 00 B0 04
+[2012-4-18 13:01:41] [android.ktpns.tester] [MQTT] ***********************************************
+[2012-4-18 13:01:41] [android.ktpns.tester] connectionReplied(0, 1200, 10.165.72.149
+[2012-4-18 13:01:41] [android.ktpns.tester] ConnectedInfo::setIP(10.165.72.149)
+[2012-4-18 13:01:41] [android.ktpns.tester] checkKeepAliveAndReschedule(false)
+[2012-4-18 13:01:41] [android.ktpns.tester] setClientState(PUSH_CONNECTED)
+[2012-4-18 13:01:41] [android.ktpns.tester] mReciver() action > IPC.PUSH.PSW.BROADCAST.CONNECT
+[2012-4-18 13:01:41] [android.ktpns.tester] pushManager::OnConnected()
+[2012-4-18 13:01:41] [android.ktpns.tester] scheduleKeepalivePing(true,742)
+[2012-4-18 13:01:41] [android.ktpns.tester] scheduleKeepalivePing: interval > 1199258
+[2012-4-18 13:01:41] [android.ktpns.tester] pushManager::sendToAPK() Bundle[{ID=android.ktpns.tester, status=1, detail=connected with server, data_type=2}]
+[2012-4-18 13:01:41] [android.ktpns.tester] readPacket()
+[2012-4-18 13:01:41] [android.ktpns.tester] pushManager::SendFormattedMessage()
+[2012-4-18 13:01:41] [android.ktpns.tester] id > android.ktpns.tester, type > 2
+[2012-4-18 13:01:41] [android.ktpns.tester] sendToAPK: send message to handler >> true
+[2012-4-18 13:01:41] [android.ktpns.tester] SaveMqttConnectionInfo() isMobileNet=true,isNetChanged=false
+[2012-4-18 13:01:44] [android.ktpns.tester] Start Timer: mTask::run()
+[2012-4-18 13:01:44] [android.ktpns.tester] Monitor::SetRunState(true)
+[2012-4-18 13:01:58] [android.ktpns.tester] PushApis::register(ssomon)
+[2012-4-18 13:01:58] [android.ktpns.tester] PushApis::SendErrorOnDisconnected(null)
+[2012-4-18 13:01:58] [android.ktpns.tester] getNetworkInfo: Network Type > MOBILE
+[2012-4-18 13:01:58] [android.ktpns.tester] getNetworkInfo() status : CONNECTED, isOlleh : false
+[2012-4-18 13:01:58] [android.ktpns.tester] pushManager::GetStatus() return CONNECT
+[2012-4-18 13:01:58] [android.ktpns.tester] Util::getProp([ro.product.version]:)
+[2012-4-18 13:01:58] [android.ktpns.tester] mqttManager::OnMessage() android.ktpns.tester:MQTT_REGISTER
+[2012-4-18 13:01:58] [android.ktpns.tester] requestRegister(ssomon,android.ktpns.tester)
+[2012-4-18 13:01:58] [android.ktpns.tester] requestRegister: client state > PUSH_CONNECTED
+[2012-4-18 13:01:58] [android.ktpns.tester] mqttregireq payload total len > 28
+[2012-4-18 13:01:58] [android.ktpns.tester] Mqtt::writePacket() Message Type > 0
+[2012-4-18 13:01:58] [android.ktpns.tester] NativeUtil::getFixedKey()
+[2012-4-18 13:01:58] [android.ktpns.tester] NativeUtil::encrypt()
+[2012-4-18 13:01:58] [android.ktpns.tester] packet encryption success. total length >> 70
+[2012-4-18 13:01:58] [android.ktpns.tester] stream_out.write()
+[2012-4-18 13:01:58] [android.ktpns.tester] [MQTT] ***************** PACKET DUMP *****************
+[2012-4-18 13:01:58] [android.ktpns.tester] [MQTT] 42 00 00 00 3C 5E 71 89 EA 8D 63 08 5B 86 05 80
+[2012-4-18 13:01:58] C0 62 33 C3 A0 88 A3 4E E7 6C E4 0D C4 3F ED 79
+[2012-4-18 13:01:58] 3C E9 6E AD 0B 93 75 C9 7C 99 8F 83 E8 71 B8 86
+[2012-4-18 13:01:58] A8 6C A4 3B AB 4D F6 07 9B 8D FB 82 2C E1 3F 2E
+[2012-4-18 13:01:58] 01 53 8D 95 78 AE
+[2012-4-18 13:01:58] [android.ktpns.tester] [MQTT] ***********************************************
+[2012-4-18 13:01:58] [android.ktpns.tester] stream_out.flush()
+[2012-4-18 13:01:58] [android.ktpns.tester] RegiTimerQueue::addTimer(android.ktpns.tester)
+[2012-4-18 13:01:58] [android.ktpns.tester] RegiTimer::RegiTimer(android.ktpns.tester)
+[2012-4-18 13:01:58] [android.ktpns.tester] RegiTimer::schedule(android.ktpns.tester)
+[2012-4-18 13:01:58] [android.ktpns.tester] schedule register response timer : 30000
+[2012-4-18 13:01:58] [android.ktpns.tester] RegiTimerQueue::addTimer() return true
+[2012-4-18 13:01:58] [android.ktpns.tester] recv encrypt data length : 130
+[2012-4-18 13:01:58] [android.ktpns.tester] recv encrypt id1 : 60, id2 : 94
+[2012-4-18 13:01:58] [android.ktpns.tester] Read data...
+[2012-4-18 13:01:58] [android.ktpns.tester] Read data completed.
+[2012-4-18 13:01:58] [android.ktpns.tester] NativeUtil::getFixedKey()
+[2012-4-18 13:01:58] [android.ktpns.tester] NativeUtil::decrypt()
+[2012-4-18 13:01:58] [android.ktpns.tester] packet decryption success. total length >> 101
+[2012-4-18 13:01:58] [android.ktpns.tester] decodePacket() i=2,word0=15
+[2012-4-18 13:01:59] [android.ktpns.tester] [MQTT] ***************** PACKET DUMP *****************
+[2012-4-18 13:01:59] [android.ktpns.tester] [MQTT] F0 63 00 60 00 51 67 41 41 41 44 78 65 6C 41 72
+[2012-4-18 13:01:59] 5A 58 75 64 76 39 2F 69 2F 57 55 37 39 43 6F 2B
+[2012-4-18 13:01:59] 57 59 42 63 62 6B 4E 55 77 75 63 4E 50 32 4A 4A
+[2012-4-18 13:01:59] 44 74 52 2F 42 79 38 34 64 77 2F 73 6C 76 7A 6A
+[2012-4-18 13:01:59] 68 51 2F 52 59 4E 67 45 7A 37 45 2F 34 47 78 38
+[2012-4-18 13:01:59] 41 39 54 59 68 4D 63 34 2F 45 4F 51 77 70 46 37
+[2012-4-18 13:01:59] 4C 70 41 3D 3D
+[2012-4-18 13:01:59] [android.ktpns.tester] [MQTT] ***********************************************
+[2012-4-18 13:01:59] [android.ktpns.tester] register return code > 0
+[2012-4-18 13:01:59] [android.ktpns.tester] received reg id len > 96
+[2012-4-18 13:01:59] [android.ktpns.tester] registrationReplied(0, [B@4651dbd8)
+[2012-4-18 13:01:59] [android.ktpns.tester] registrationReplied: client state > PUSH_CONNECTED
+[2012-4-18 13:01:59] [android.ktpns.tester] decryptRegId([B@4651dbd8)
+[2012-4-18 13:01:59] [android.ktpns.tester] base64 decoded array len >> 70
+[2012-4-18 13:01:59] [android.ktpns.tester] NativeUtil::genKey()
+[2012-4-18 13:01:59] [android.ktpns.tester] NativeUtil::decrypt()
+[2012-4-18 13:01:59] [android.ktpns.tester] decryptRegId() return 357841036836084:ssomon:android.ktpns.tester
+[2012-4-18 13:01:59] [android.ktpns.tester] extractPackageName(357841036836084:ssomon:android.ktpns.tester)
+[2012-4-18 13:01:59] [android.ktpns.tester] RegiTimerQueue::removeTimer(android.ktpns.tester)
+[2012-4-18 13:01:59] [android.ktpns.tester] RegiTimer::cancel(android.ktpns.tester)
+[2012-4-18 13:01:59] [android.ktpns.tester] RegiTimerQueue::removeTimer() return true
+[2012-4-18 13:01:59] [android.ktpns.tester] MqttData type > 0
+[2012-4-18 13:01:59] [android.ktpns.tester] mReciver() action > IPC.PUSH.PSW.BROADCAST.REC
+[2012-4-18 13:01:59] [android.ktpns.tester] readPacket()
+[2012-4-18 13:01:59] [android.ktpns.tester] pushManager::sendToAPK() Bundle[{ID=android.ktpns.tester, result=1, reg_id=QgAAADxelArZXudv9/i/WU79Co+WYBcbkNUwucNP2JJDtR/By84dw/slvzjhQ/RYNgEz7E/4Gx8A9TYhMc4/EOQwpF7LpA==, data_type=0}]
+[2012-4-18 13:01:59] [android.ktpns.tester] pushManager::SendFormattedMessage()
+[2012-4-18 13:01:59] [android.ktpns.tester] id > android.ktpns.tester, type > 0
+[2012-4-18 13:01:59] [android.ktpns.tester] sendToAPK: send message to handler >> true
+[2012-4-18 13:01:59] [android.ktpns.tester] mqttManager::OnMessage() android.ktpns.tester:ok
+[2012-4-18 13:04:44] [android.ktpns.tester] mWakeupClientReceiver::onReceive()
+[2012-4-18 13:04:44] [android.ktpns.tester] Util::IsExistPackage(com.ktpns.pa) return false
+[2012-4-18 13:09:03] [android.ktpns.tester] PushApis::getConnectionState()
+[2012-4-18 13:09:03] [android.ktpns.tester] getNetworkInfo: Network Type > MOBILE
+[2012-4-18 13:09:03] [android.ktpns.tester] getNetworkInfo() status : CONNECTED, isOlleh : false
+[2012-4-18 13:09:03] [android.ktpns.tester] pushManager::GetStatus() return CONNECT
+[2012-4-18 13:09:03] [android.ktpns.tester] PushApis::getConnectionState() return 0
+[2012-4-18 13:09:18] [android.ktpns.tester] PushApis::getConnectionState()
+[2012-4-18 13:09:19] [android.ktpns.tester] getNetworkInfo: Network Type > MOBILE
+[2012-4-18 13:09:19] [android.ktpns.tester] getNetworkInfo() status : CONNECTED, isOlleh : false
+[2012-4-18 13:09:19] [android.ktpns.tester] pushManager::GetStatus() return CONNECT
+[2012-4-18 13:09:19] [android.ktpns.tester] PushApis::getConnectionState() return 0
